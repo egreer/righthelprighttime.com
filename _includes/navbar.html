@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
   <div class="pr-2">
-    <a href="/"><img src="/assets/images/logo.png" alt="Right Help Right Time Logo"></a>
+    <a href="/"><img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Right Help Right Time Logo"></a>
   </div>
   <div class="text-rhrt-red">
     <h1>{{ site.title | default: site.github.repository_name }}</h1>
