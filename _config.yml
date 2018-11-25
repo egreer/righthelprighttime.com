@@ -1,1 +1,27 @@
-theme: jekyll-theme-merlot
+# theme: jekyll-theme-merlot
+title: "Right Help Right Time"
+description: "Business Consulting, Personal Services for Seniors and Youth"
+
+owner:
+  name: egreer
+  url: "https://eric-greer.com"
+contributor:
+  name: lgreer
+  url: "https://leahgreer.com"
+
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+
+permalink: pretty
+
+whitelist:
+  - jekyll-redirect-from
+plugins:
+  - jekyll-github-metadata
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-seo-tag

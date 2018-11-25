@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="pr-2">
+    <a href="/"><img src="/assets/images/logo.png" alt="Right Help Right Time Logo"></a>
+  </div>
+  <div class="text-rhrt-red">
+    <h1>{{ site.title | default: site.github.repository_name }}</h1>
+    <h4>{{ site.description | default: site.github.project_tagline }}</h4>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-sm navbar-dark bg-rhrt-blue">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+       {% assign pages_list = site.pages | sort: "order" %}
+       {% assign group = 'navigation' %}
+       {% include pages_list %}
+     </ul>
+   </div>
+</nav>
