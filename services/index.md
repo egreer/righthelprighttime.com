@@ -3,6 +3,7 @@ layout: default
 title: Services
 group: navigation
 order: 1
+priority: .8
 ---
 
 Services are personal to your needs for the Right Help at the Right Time. Some examples include:

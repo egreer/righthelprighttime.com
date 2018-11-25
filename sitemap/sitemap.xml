@@ -1,0 +1,28 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
+            https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+{% assign pages_list = site.html_pages | sort: "order", "last" %}
+{% for page in pages_list %}
+    <url>
+      <loc>{{ page.url | absolute_url }}</loc>
+      <lastmod>{{ page.last_modified_at | date: '%Y-%m-%dT%H:%S:%M%z'}}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>{{ page.priority | default: "1.00" }}</priority>
+    </url>
+{% endfor %}
+
+{% for post in site.posts %}
+    <url>
+      <loc>{{ post.url | absolute_url }}</loc>
+      <lastmod>{{ post.last_modified_at | date: '%Y-%m-%dT%H:%S:%M%z'}}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>{{ post.priority | default: "0.50" }}</priority>
+    </url>
+{% endfor %}
+</urlset>

@@ -3,6 +3,7 @@ layout: default
 title: Links
 group: navigation
 order: 5
+priority: .8
 ---
 
 * [Human Resources Association of Southern Maine](https://www.shrm.org/)

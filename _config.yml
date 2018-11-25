@@ -19,9 +19,11 @@ permalink: pretty
 
 whitelist:
   - jekyll-redirect-from
+  - jekyll-last-modified-at
 plugins:
   - jekyll-github-metadata
   - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-last-modified-at

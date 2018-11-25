@@ -3,6 +3,7 @@ layout: default
 title: About
 group: navigation
 order: 2
+priority: .8
 ---
 
 Right Help Right Time is a client focused personal care agency and consulting practice that provides support services, so people have the Right Help at the Right Time to “be well.”

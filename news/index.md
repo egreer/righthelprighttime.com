@@ -3,6 +3,7 @@ layout: default
 title: News
 group: navigation
 order: 4
+priority: .8
 ---
 
 <div>
